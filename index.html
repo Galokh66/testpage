@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is a simple HTML document.</p>
+    <script src="https://dxp-web.acquia.io/static/cdp-segments/latest/cdp-segments.js"></script>
+<script>
+    // Set your API URL 
+AcquiaCdpSegments.config({ API_URL: "https://cdp-segments-api-dev.dev.cicd.acquia.io/api/v1/segments" });
+// Set email
+AcquiaCdpSegments.setTracker("email", "mark.davis@domain.com");
+//Fetch Segment
+AcquiaCdpSegments.fetchSegment();
+</script>
+
+</body>
+</html>
