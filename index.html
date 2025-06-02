@@ -26,12 +26,14 @@
 
 
     <script>
-    // Set your API URL 
+        document.addEventListener('DOMContentLoaded', function() {
+    //cdp codehere
     AcquiaCdpSegments.config({ API_URL: "https://cdp-segments-api-dev.dev.cicd.acquia.io/api/v1/segments" });
     // Set email
     AcquiaCdpSegments.setTracker("email", "mark.davis@domain.com");
     //Fetch Segment
     AcquiaCdpSegments.fetchSegment();
+    });
     </script>
 
 </body>
